@@ -184,7 +184,7 @@ function showGameEndModal(message) {
  */
 function showSkull() {
     let faceImageEle = document.getElementsByClassName("face-img")[0];
-    faceImageEle.setAttribute("src", "static/skull.png");
+    faceImageEle.setAttribute("src", "assets/skull.png");
 
     let illustrationMessageEle = document.getElementsByClassName("illustration-message")[0];
     illustrationMessageEle.classList.add("visible");
@@ -196,7 +196,7 @@ function showSkull() {
  */
 function hideSkull() {
     let faceImageEle = document.getElementsByClassName("face-img")[0];
-    faceImageEle.setAttribute("src", "static/face.png");
+    faceImageEle.setAttribute("src", "assets/face.png");
 
     let illustrationMessageEle = document.getElementsByClassName("illustration-message")[0];
     illustrationMessageEle.classList.remove("visible");
