@@ -1,0 +1,260 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.game-title {
+    color: #6fc28a;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+}
+
+.game-message {
+    color: #ffffff;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.guesses-container {
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.guesses-left-message {
+    color: #6fc28a;
+}
+
+.guesses-left-count {
+    font-size: 22px;
+    margin-left: 5px;
+}
+
+
+
+.modal {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(1,1,1,0.4);
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+}
+
+.modal-content {
+    background-color: #6fc28a;
+    width: 500px;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+
+}
+
+.game-container {
+    background-color: #050608;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 50px;
+    margin: 50px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.game-canvas {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    margin-top: 30px;
+}
+
+.gameplay-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.placeholder-container {
+    display: flex;
+    margin: 30px 20px;
+}
+
+.letter-input-btn-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 450px;
+}
+
+.letter-input-btn {
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #48296c;
+    color: #6fc28a;
+}
+
+.letter-input-btn:hover {
+    cursor: pointer;
+    filter: brightness(80%);
+}
+
+.letter-input-btn:disabled {
+    pointer-events: none;
+    filter: brightness(40%);
+}
+
+.character {
+    border-bottom: 2px solid #6fc28a;
+    margin: 5px;
+    width: 20px;
+    height: 20px;
+    /*text-align: center;*/
+    color: #ffffff;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.space {
+    width: 30px;
+}
+
+.hangman-illustration {
+    position: relative;
+    width: fit-content;
+    background-color: #48296c;
+    width: 380px;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.illustration-message {
+    position: absolute;
+    left: 190px;
+    bottom: 65px;
+    font-size: 18px;
+    color: #ffffff;
+    visibility: hidden;
+}
+
+.gallow-img {
+    height: 500px;
+    visibility: hidden;
+}
+.noose-img {
+    height: 100px;
+    position: absolute;
+    top: 35px;
+    left: 250px;
+    visibility: hidden;
+}
+
+.face-img {
+    height: 90px;
+    width: 90px;
+    position: absolute;
+    top: 130px;
+    left: 210px;
+    visibility: hidden;
+    z-index: 1;
+}
+
+.torso-img {
+    position: absolute;
+    height: 130px;
+    top: 215px;
+    left: 250px;
+    visibility: hidden;
+    z-index: 2;
+}
+
+.shorts-img {
+    position: absolute;
+    height: 80px;
+    top: 260px;
+    left: 218px;
+    visibility: hidden;
+    z-index: 3;
+}
+
+.right-leg-img {
+    position: absolute;
+    top: 340px;
+    left: 250px;
+    height: 50px;
+    z-index: 1;
+    visibility: hidden;
+}
+
+.left-leg-img {
+    position: absolute;
+    top: 340px;
+    left: 205px;
+    height: 50px;
+    z-index: 1;
+    visibility: hidden;
+}
+
+.left-arm-img {
+    position: absolute;
+    height: 25px;
+    top: 240px;
+    left: 202px;
+    z-index: 1;
+    visibility: hidden;
+}
+
+.right-arm-img {
+    position: absolute;
+    height: 25px;
+    top: 240px;
+    left: 250px;
+    z-index: 1;
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.game-action-btn {
+    padding: 10px 40px;
+    background-color: #48296c;
+    color: #ffffff;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.game-action-btn:hover {
+    filter: brightness(90%);
+    transform: scale(0.95);
+}
+
+.game-action-btn:active {
+    filter: brightness(70%);
+    transform: scale(0.9);
+}
